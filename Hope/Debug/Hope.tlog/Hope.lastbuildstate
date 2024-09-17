@@ -1,2 +1,6 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+<<<<<<< HEAD
 Debug|Win32|E:\Demon Slayer\DemonSlayer\|
+=======
+Debug|Win32|E:\DemonSlayer\|
+>>>>>>> 592b7049938922113c128400cb26389ab78f9fb5

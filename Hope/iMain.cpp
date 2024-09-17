@@ -56,10 +56,17 @@ int tanjirowb11Index = 0;
 int tanjirohkIndex = 0;
 int storeCoins = 0;
 //muzan
+<<<<<<< HEAD
 char muzan[10][25] = { "Muzan douraitase\\1.png", "Muzan douraitase\\2.png", "Muzan douraitase\\3.png", "Muzan douraitase\\4.png", "Muzan douraitase\\5.png", "Muzan douraitase\\6.png", "Muzan douraitase\\7.png", "Muzan douraitase\\8.png", "Muzan douraitase\\9.png", "Muzan douraitase\\10.png" };
 char muzanstand[25] = "Muzan kharay ase\\MK0.png";
 char muzanatk[17][50] = { "Muzan hat martase\\msa1.png", "Muzan hat martase\\msa2.png", "Muzan hat martase\\msa3.png", "Muzan hat martase\\msa4.png", "Muzan hat martase\\msa5.png", "Muzan hat martase\\msa6.png", "Muzan hat martase\\msa7.png", "Muzan hat martase\\msa8.png", "Muzan hat martase\\msa9.png", "Muzan hat martase\\msa10.png", "Muzan hat martase\\msa11.png", "Muzan hat martase\\msa12.png", "Muzan hat martase\\msa13.png", "Muzan hat martase\\msa14.png", "Muzan hat martase\\msa15.png", "Muzan hat martase\\msa16.png", "Muzan hat martase\\msa17.png" };
 char muzandatk[18][50] = { "MA1\\ma1.png", "MA1\\ma2.png", "MA1\\ma3.png", "MA1\\ma4.png", "MA1\\ma5.png", "MA1\\ma6.png", "MA1\\ma7.png", "MA1\\ma8.png", "MA1\\ma9.png", "MA1\\ma10.png", "MA1\\ma11.png", "MA1\\ma12.png", "MA1\\ma13.png", "MA1\\ma14.png", "MA1\\ma15.png", "MA1\\ma16.png", "MA1\\ma17.png", "MA1\\ma18.png" };
+=======
+char muzan[4][25] = { "Villain\m.png" , "Villain\n.png" , "Villain\o.png" , "Villain\p.png" };
+char muzanstand[25] = "Villain\m.png";
+char muzanatk[4][50] = { "Villain\m.png", "Villain\n.png", "Villain\o.png", "Villain\p.png" };
+char muzandatk[4][50] = { "Villain\m.png", "Villain\n.png", "Villain\o.png", "Villain\p.png" };
+>>>>>>> 592b7049938922113c128400cb26389ab78f9fb5
 //struct Muzan
 int muzanCordinateX = 1350;
 int muzanCordinateY = 100;

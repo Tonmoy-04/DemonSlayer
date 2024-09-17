@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 ﻿Build started 17/09/2024 13:01:01.
      1>Project "E:\Demon Slayer\DemonSlayer\Hope\Hope.vcxproj" on node 2 (Build target(s)).
+=======
+﻿Build started 9/15/2024 10:31:13 PM.
+     1>Project "E:\DemonSlayer\Hope\Hope.vcxproj" on node 2 (Build target(s)).
+>>>>>>> 592b7049938922113c128400cb26389ab78f9fb5
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Demon_Slayer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt iMain.cpp
          iMain.cpp
+<<<<<<< HEAD
      1>e:\demon slayer\demonslayer\hope\imain.cpp(799): warning C4129: 'q' : unrecognized character escape sequence
      1>e:\demon slayer\demonslayer\hope\imain.cpp(827): warning C4129: 'e' : unrecognized character escape sequence
      1>e:\demon slayer\demonslayer\hope\imain.cpp(850): warning C4129: 'c' : unrecognized character escape sequence
@@ -16,3 +22,27 @@
 Build succeeded.
 
 Time Elapsed 00:00:02.14
+=======
+     1>e:\demonslayer\hope\imain.cpp(59): warning C4129: 'm' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(59): warning C4129: 'o' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(59): warning C4129: 'p' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(60): warning C4129: 'm' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(61): warning C4129: 'm' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(61): warning C4129: 'o' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(61): warning C4129: 'p' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(62): warning C4129: 'm' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(62): warning C4129: 'o' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(62): warning C4129: 'p' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(798): warning C4129: 'q' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(826): warning C4129: 'e' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(849): warning C4129: 'c' : unrecognized character escape sequence
+     1>e:\demonslayer\hope\imain.cpp(882): warning C4129: 'z' : unrecognized character escape sequence
+       Link:
+         E:\Programs\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\DemonSlayer\Debug\Hope.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\DemonSlayer\Debug\Hope.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\DemonSlayer\Debug\Hope.lib" /MACHINE:X86 Debug\iMain.obj
+         Hope.vcxproj -> E:\DemonSlayer\Debug\Hope.exe
+     1>Done Building Project "E:\DemonSlayer\Hope\Hope.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.88
+>>>>>>> 592b7049938922113c128400cb26389ab78f9fb5
