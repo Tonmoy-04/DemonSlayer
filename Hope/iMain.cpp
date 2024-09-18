@@ -33,7 +33,7 @@ int wb11 = 0;
 int wb1 = 0;
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Idraw Here::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-bool musicon = true;
+bool musicon = false;
 
 int attack, autoindex;
 int gameState = -1;
@@ -56,10 +56,10 @@ int tanjirowb11Index = 0;
 int tanjirohkIndex = 0;
 int storeCoins = 0;
 //muzan
-char muzan[4][25] = { "Villain\m.png" , "Villain\n.png" , "Villain\o.png" , "Villain\p.png" };
-char muzanstand[25] = "Villain\m.png";
-char muzanatk[4][50] = { "Villain\m.png", "Villain\n.png", "Villain\o.png", "Villain\p.png" };
-char muzandatk[4][50] = { "Villain\m.png", "Villain\n.png", "Villain\o.png", "Villain\p.png" };
+char muzan[4][25] = { "Villain\\m.png" , "Villain\\n.png" , "Villain\\o.png" , "Villain\\p.png" };
+char muzanstand[25] = "Villain\\m.png";
+char muzanatk[4][50] = { "Villain\\m.png", "Villain\\n.png", "Villain\\o.png", "Villain\\p.png" };
+char muzandatk[4][50] = { "Villain\\m.png", "Villain\\n.png", "Villain\\o.png", "Villain\\p.png" };
 //struct Muzan
 int muzanCordinateX = 1350;
 int muzanCordinateY = 100;
@@ -377,7 +377,7 @@ void randAttack()
 {
 	if (muzanatk1)
 	{
-		if (muzanatkIndex >= 15)
+		if (muzanatkIndex >= 3)
 		{
 			muzanatk1 = false;
 			muzanatk2 = true;
@@ -386,7 +386,7 @@ void randAttack()
 	}
 	if (muzanatk2)
 	{
-		if (muzanatk2Index >= 16)
+		if (muzanatk2Index >= 3)
 		{
 			muzanatk2 = false;
 			muzanatk1 = true;
@@ -843,7 +843,7 @@ void iKeyboard(unsigned char key)
 			tanjirobaIndex = 0;
 		}
 
-
+//
 
 	}
 	if (key == '\c')
