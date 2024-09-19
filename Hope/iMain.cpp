@@ -18,7 +18,7 @@ struct buttonCordinate{
 char homemenu[20] = "Background\\menu.png";
 char button[6][25] = { "Buttons\\play.png", "Buttons\\store.png", "Buttons\\options.png", "Buttons\\help.png", "Buttons\\credit.png", "Buttons\\exit.png" };
 
-char play[20] = "Background\\bg3.png";
+char play[20] = "Background\\bg4.png";
 char store[25] = "Background\\store.png";
 char gameOverImage[30] = "Background\\gameover.png";
 char khelaparena[30] = "Background\\tanjiroded.png";
@@ -43,9 +43,9 @@ char tanjiro[6][25] = { "Tanjiro\\dour1.png", "Tanjiro\\dour2.png", "Tanjiro\\do
 char rtanjiro[6][25] = { "Tanjiro\\r.dour1.png", "Tanjiro\\r.dour2.png", "Tanjiro\\r.dour3.png", "Tanjiro\\r.dour4.png", "Tanjiro\\r.dour5.png", "Tanjiro\\r.dour6.png" };
 char tanjirostand[25] = "Tanjiro\\kharayase.png";
 char tanjirowaterbreathing1[10][25] = { "water1\\wb1.png", "water1\\wb2.png", "water1\\wb3.png", "water1\\wb4.png", "water1\\wb5.png", "water1\\wb6.png", "water1\\wb7.png", "water1\\wb8.png", "water1\\wb9.png", "water1\\wb10.png" };
-char tanjirobasicattack[11][25] = { "battack\\ba0.png", "battack\\ba0.png", "battack\\ba1.png", "battack\\ba2.png", "battack\\ba3.png", "battack\\ba4.png", "battack\\ba5.png", "battack\\ba6.png", "battack\\ba7.png", "battack\\ba8.png", "battack\\ba9.png" };
+char tanjirobasicattack[9][25] = { "battack\\ba1.png", "battack\\ba2.png", "battack\\ba3.png", "battack\\ba4.png", "battack\\ba5.png", "battack\\ba6.png", "battack\\ba7.png", "battack\\ba8.png", "battack\\ba9.png" };
 char tanjirowaterbreathing11[7][25] = { "water11\\wb1.png", "water11\\wb2.png", "water11\\wb3.png", "water11\\wbd1.png", "water11\\wbd2.png", "water11\\wbd3.png", "water11\\wbd4.png" };
-char hinogamikagura[11][25] = { "hinogamikagura\\thk1.png", "hinogamikagura\\thk2.png", "hinogamikagura\\thk3.png", "hinogamikagura\\thk4.png", "hinogamikagura\\thk5.png", "hinogamikagura\\thk6.png", "hinogamikagura\\thk7.png", "hinogamikagura\\thk8.png", "hinogamikagura\\thk9.png", "hinogamikagura\\thk10.png", "hinogamikagura\\thk11.png" };
+char hinogamikagura[11][25] = { "hinogamikagura\\1st.png", "hinogamikagura\\2nd.png", "hinogamikagura\\3rd.png", "hinogamikagura\\4th.png", "hinogamikagura\\5th.png", "hinogamikagura\\6th.png", "hinogamikagura\\7th.png"};
 int tanjiroCordinateX = 450;
 int tanjiroCordinateY = 100;
 int tanjiroIndex = 0;
@@ -58,9 +58,8 @@ int storeCoins = 0;
 //muzan
 char muzan[4][25] = { "Villain\\m.png" , "Villain\\n.png" , "Villain\\o.png" , "Villain\\p.png" };
 char muzanstand[25] = "Villain\\m.png";
-char muzanatk[4][50] = { "Villain\\m.png", "Villain\\n.png", "Villain\\o.png", "Villain\\p.png" };
-char muzandatk[4][50] = { "Villain\\m.png", "Villain\\n.png", "Villain\\o.png", "Villain\\p.png" };
-//struct Muzan
+char muzanatk[10][50] = { "Villain\\1.png", "Villain\\2.png", "Villain\\3.png", "Villain\\4.png", "Villain\\5.png", "Villain\\6.png", "Villain\\7.png", "Villain\\8.png" , "Villain\\9.png", "Villain\\10.png" };
+char muzandatk[10][50] = { "Villain\\1.png", "Villain\\2.png", "Villain\\3.png", "Villain\\4.png", "Villain\\5.png", "Villain\\6.png", "Villain\\7.png", "Villain\\8.png", "Villain\\9.png", "Villain\\10.png" };
 int muzanCordinateX = 1350;
 int muzanCordinateY = 100;
 int muzanIndex = 0;
@@ -377,7 +376,7 @@ void randAttack()
 {
 	if (muzanatk1)
 	{
-		if (muzanatkIndex >= 3)
+		if (muzanatkIndex >= 8)
 		{
 			muzanatk1 = false;
 			muzanatk2 = true;
@@ -386,7 +385,7 @@ void randAttack()
 	}
 	if (muzanatk2)
 	{
-		if (muzanatk2Index >= 3)
+		if (muzanatk2Index >= 8)
 		{
 			muzanatk2 = false;
 			muzanatk1 = true;
@@ -754,7 +753,7 @@ void iMouse(int button, int state, int mx, int my)
 			}
 			if (mx >= 770 && mx <= 1055 && my >= 466 && my <= 565)
 			{
-				PlaySound("Music\\menusfx.wav", NULL, SND_LOOP | SND_ASYNC);
+				PlaySound("Music\\abcsfx.wav", NULL, SND_LOOP | SND_ASYNC);
 				musicon = true;
 			}
 			if (mx >= 770 && mx <= 1055 && my >= 310 && my <= 410)
@@ -892,14 +891,14 @@ void iKeyboard(unsigned char key)
 			tanjirohkIndex = 0;
 			iResumeTimer(countTimer);
 			CollisionCheck();
-			if (tanjirohkIndex <= 10 && tanjiroCordinateX < 1300){
+			if (tanjirohkIndex <= 6 && tanjiroCordinateX < 1300){
 
 				running = false;
 				fight4 = true;
 				standPosition = false;
 			}
 
-			if (tanjirohkIndex >= 10 && tanjiroCordinateX < 1300)
+			if (tanjirohkIndex >= 6 && tanjiroCordinateX < 1300)
 			{
 				fight4 = false;
 				standPosition = true;
@@ -964,7 +963,7 @@ void iSpecialKeyboard(unsigned char key)
 }
 void changeindex()
 {
-	if ((tanjirobaIndex >= 0 && tanjirobaIndex <= 9) && fight1)
+	if ((tanjirobaIndex >= 0 && tanjirobaIndex <= 8) && fight1)
 	{
 		tanjirobaIndex++;
 	}
@@ -999,7 +998,7 @@ int main(void)
 	///updated see the documentations
 
 	if (musicon == true){
-		PlaySound("Music\\menusfx.wav", NULL, SND_LOOP | SND_ASYNC);
+		PlaySound("Music\\abcsfx.wav", NULL, SND_LOOP | SND_ASYNC);
 	}
 
 	for (int i = 5; i >= 0; i--)
